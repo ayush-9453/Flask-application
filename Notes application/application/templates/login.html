@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<form method  ='POST'>
+<section class=" h-full" style="background-color: #508bfc;" method = 'POST'>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card border-0 shadow rounded-3 my-5">
+              <div class="card-body p-4 p-sm-5">
+                <h5 class="card-title text-center mb-5 ">Sign In</h5>
+                <form>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    <label for="email">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="password" name='password'placeholder="Password">
+                    <label for="password">Password</label>
+                  </div>
+    
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                    <label class="form-check-label" for="rememberPasswordCheck">
+                      Remember password
+                    </label>
+                  </div>
+                  <div class="d-grid">
+                    <button class="btn btn-primary fs-6 py-3 px-4 text-uppercase fw-bold" type="submit">Sign In</button>
+                  </div>
+                  <hr class="my-4">
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="/register"
+                    style="color: #393f81;">Register here</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form>
+      {% endblock %}

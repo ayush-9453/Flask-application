@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<form method = 'POST'>
+<section class="h-full" style="background-color: #508bfc;" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h5 class="card-title text-center mb-5 ">Register</h5>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Username">
+                                <label for="firstname">Username</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                                <label for="email">Email address</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password1"name='password1' placeholder="Password">
+                                <label for="password1">Password</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="password2" name="password2" placeholder="Confirm Password">
+                                <label for="password2">Confirm Password</label>
+                            </div>
+                           <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+                                <label class="form-check-label" for="termsCheck">
+                                    I agree to the Terms and Conditions
+                                </label>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary fs-6 py-3 px-4 text-uppercase fw-bold" type="submit">Register</button>
+                            </div>                    
+                            <hr class="my-4">
+                            <p class="mb-5 pb-lg-2" style="color: #393f81;">
+                                Already have an account? <a href="/login" style="color: #393f81;">Sign In here</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</form>
+{% endblock %}
